@@ -1,6 +1,8 @@
-body {
+.zero {
   margin: 0;
   padding: 0;
+}
+body {
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -8,19 +10,26 @@ body {
   color: #fff;
   text-transform: uppercase;
   background-color: #000;
-  background-image: url("img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
 }
 .inner-page {
   color: #000;
   background-color: #f9f6f3;
-  background-image: url("img/pattern-light.jpg");
+  background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
 a {
   text-decoration: none;
+}
+.main-header {
+  margin-bottom: 75px;
 }
 .button {
   font: inherit;
@@ -35,11 +44,34 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
   background-color: #000;
+}
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-header-logo {
+  width: 368px;
+  height: 153px;
+  order: 2;
 }
 .site-navigation,
 .user-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .site-navigation a,
 .user-navigation a {
@@ -51,11 +83,25 @@ a {
 .user-navigation a:focus {
   background-color: #242424;
 }
+.site-navigation {
+  width: 620px;
+}
+.user-navigation {
+  width: 140px;
+}
+.features {
+  margin-bottom: 80px;
+}
 .features-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .feature-item {
   text-align: center;
+  width: 300px;
 }
 .feature-item h3 {
   font-size: 30px;
@@ -68,9 +114,18 @@ a {
   background-position: 0 0;
   background-repeat: repeat;
 }
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+}
 .index-columns h2 {
   font-size: 30px;
   line-height: 42px;
+}
+.news {
+  width: 380px;
 }
 .news-list {
   list-style: none;
@@ -78,9 +133,18 @@ a {
 .news-item time {
   text-transform: none;
 }
+.gallery {
+  width: 300px;
+}
 .gallery-content {
   background-color: #ccc;
   border: 7px solid #fff;
+}
+.contacts {
+  width: 380px;
+}
+.appointment {
+  width: 300px;
 }
 .appointment-item input {
   font: inherit;
@@ -93,9 +157,15 @@ a {
 .main-footer {
   color: #fff;
   background-color: #212121;
-  background-image: url("img/pattern-dark.jpg");
+  background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+  margin-top: 65px;
+}
+.footer-contacts {
+  margin: 0;
+  width: 320px;
+  margin-right: 80px;
 }
 .footer-contacts a {
   color: #fff;
@@ -105,6 +175,9 @@ a {
 .footer-contacts a:focus {
   text-decoration: none;
 }
+.footer-social {
+  width: 145px;
+}
 .footer-social ul {
   list-style: none;
 }
@@ -112,7 +185,9 @@ a {
   color: #fff;
 }
 .footer-copyright {
-  text-align: center;
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
 }
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
@@ -122,7 +197,7 @@ a {
 .modal {
   color: #000;
   background-color: #f8f3f0;
-  background-image: url("img/pattern-light.jpg");
+  background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
