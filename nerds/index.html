@@ -9,7 +9,7 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a href="#" class="main-header-logo"><img src="img/index-logo.svg" alt="Логотип студии Nerds"></a>
+			<a href="#" class="main-header-logo"><img src="img/nerds-logo.svg" alt="Логотип студии Nerds" width="160" height="65"></a>
 			<ul class="site-navigation">
 				<li><a href="#">Студия</a></li>
 				<li><a href="#">Клиенты</a></li>
@@ -24,6 +24,7 @@
 	<main class="container">
 		<h1 class="visually-hidden">Дизайн студия Nerds</h1>
 		<section class="tagline">
+			<h2 class="visually-hidden">Слоганы дизайн студии</h2>
 			<p class="tagline-header">Долго, дорого, скрупулезно.</p>
 			<p class="tagline-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 			<a href="#" class="btn tagline-button">Узнать больше</a>
@@ -43,22 +44,23 @@
 					</li>
 					<li class="services-item3">
 						<h3>Презентации</h3>
-						<p>Вы даже не подозреваете, 
-насколько вы изумительны!</p>
+						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 						<a href="" class="btn services-btn">Заказать</a>
 					</li>
 				</ul>
 		</section>
 		<section class="features">
+			<h2 class="visually-hidden">Список преимуществ дизайн студии</h2>
 			<p class="features-tagline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-			<p class="fetures-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-			<ul class="features-list">Выполняем заказы на разработку:
+			<p class="features-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+			<p class="features-header">Выполняем заказы на разработку:</p>
+				<ul class="features-list">
 				<li class="features-list-item1">Веб-сайтов любой сложности</li>
 				<li class="features-list-item2">Мобильных приложений для iOS и Android</li>
 				<li class="features-list-item3">Слайдшоу и видео для корпоративных презентаций</li>
 			</ul>
 			<p class="features-accuracy">с 2004 года Любим точность во всем:</p>
-			<table>
+			<table class="features-table">
 				<tr>
 					<td>146%</td>
 					<td>100%</td>
@@ -72,11 +74,20 @@
 			</table>
 		</section>
 		<section class="friends">
+			<h2 class="visually-hidden">Список бизнес партнеров студии</h2>
+			<ul class="friend-list">
+				<li><img src="img/logo-1-min.png" alt="Логотип html academy" width="199" height="68"></li>
+				<li><img src="img/logo-2-min.png" alt="Логотип барбершоп Бородинский" width="209" height="90"></li>
+				<li><img src="img/logo-3-min.png" alt="Логотип Pink" width="185" height="52"></li>
+				<li><img src="img/logo-4-min.png" alt="Логотип Mishka" width="173" height="84"></li>
+			</ul>
 			
 		</section>
 		<section class="map">
-			<h2 class="map-title">NЁRDS DESIGN STUDIO</h2>
+			<h2 class="visually-hidden">Как до нас добраться</h2>
+			<img src="img/map-layer-min.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" class="map-image" width="1440" height="416">
 			<p class="map-addres">
+			<span class="map-header">NЁRDS DESIGN STUDIO</span>
 			191186, Санкт-Петербург,<br>
 			ул. Б. Конюшенная, д. 19/8<br>
 			тел. +7 (812) 275-75-75
@@ -97,7 +108,22 @@
 	</footer>
 	<section class="modal modal-write-us">
 		<h2>Напишите нам</h2>
-		<!--Здесь будет форма-->
+		<form action="#" class="appointment-form" method="post">
+			<p class="appointment-item">
+				<label for="appointment-name">Ваше имя:</label>
+				<input  type="text" id="appointment-name" name="name" value="" placeholder="Имя Фамилия">
+			</p>
+			<p class="appointment-item">
+				<label for="appointment-email">Ваш e-mail:</label>
+				<input type="text" id="appointment-email" name="email" value="" placeholder="email@example.com">
+			</p>
+			<p class="appointment-item">
+				<label for="appointment-textarea">Текст письма:</label> 
+				<textarea name="textarea" id="appointment-textarea" cols="30" rows="10"	placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="button" type="submit">Отправить</button>
+		</form>	
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 </body>
 </html>
