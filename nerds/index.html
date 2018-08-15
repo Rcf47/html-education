@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Дизайн студия Nerds</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,35 +18,36 @@
 				<li><a href="#">Контакты</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="cart">Корзина</li>
+				<li class="cart"><a href="#">Корзина</a></li>
 			</ul>
 		</nav>
-	</header>
-	<main class="container">
-		<h1 class="visually-hidden">Дизайн студия Nerds</h1>
 		<section class="tagline">
+			<h1 class="visually-hidden">Дизайн студия Nerds</h1>
 			<h2 class="visually-hidden">Слоганы дизайн студии</h2>
 			<p class="tagline-header">Долго, дорого, скрупулезно.</p>
 			<p class="tagline-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-			<a href="#" class="btn tagline-button">Узнать больше</a>
+			<a href="#" class="btn btn-red">Узнать больше</a>
 		</section>
+		
+	</header>
+	<main class="container">	
 		<section class="services">
 			<h2 class="visually-hidden">Услуги</h2>
 				<ul class="services-list">
 					<li class="services-item1">
 						<h3>Веб-сайты</h3>
 						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-						<a href="" class="btn services-btn">Заказать</a>
+						<a href="" class="btn btn-red">Заказать</a>
 					</li>
 					<li class="services-item2">
 						<h3>Приложения</h3>
 						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-						<a href="" class="btn services-btn">Заказать</a>
+						<a href="" class="btn btn-green">Заказать</a>
 					</li>
 					<li class="services-item3">
 						<h3>Презентации</h3>
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-						<a href="" class="btn services-btn">Заказать</a>
+						<a href="" class="btn btn-yellow">Заказать</a>
 					</li>
 				</ul>
 		</section>
@@ -61,10 +63,10 @@
 			</ul>
 			<p class="features-accuracy">с 2004 года Любим точность во всем:</p>
 			<table class="features-table">
-				<tr>
-					<td>146%</td>
-					<td>100%</td>
-					<td>50%</td>
+				<tr class="features-percentage">
+					<td>146<span class="percentage">%</span></td>
+					<td>100<sup class="percentage">%</sup></td>
+					<td>50<sup class="percentage">%</sup></td>
 				</tr>
 				<tr>
 					<td>Уровень самоотдачи</td>
@@ -92,14 +94,14 @@
 			ул. Б. Конюшенная, д. 19/8<br>
 			тел. +7 (812) 275-75-75
 			</p>
-			<a class="mail-us" href="#">Напишите нам</a>
+			<a class="btn btn-red" href="#">Напишите нам</a>
 		</section>
 	</main>
 	<footer class="main-footer">
 		<div class="footer-social">
 			<b class="footer-social-tagline">Давайте дружить, это выгодно!</b>
 			<p class="footer-social-sale">Скидка 10% для друзей из социальных сетей.</p>
-			<ul>
+			<ul class="footer-social-list">
 				<li><a href="" class="social-btn">Вконтакте</a></li>
 				<li><a href="" class="social-btn">Фейсбук</a></li>
 				<li><a href="" class="social-btn">Инстаграм</a></li>
@@ -121,7 +123,7 @@
 				<label for="appointment-textarea">Текст письма:</label> 
 				<textarea name="textarea" id="appointment-textarea" cols="30" rows="10"	placeholder="В свободной форме"></textarea>
 			</p>
-			<button class="button" type="submit">Отправить</button>
+			<button class="btn btn-red" type="submit">Отправить</button>
 		</form>	
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>

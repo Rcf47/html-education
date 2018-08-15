@@ -1,3 +1,41 @@
+.zero {
+	margin: 0;
+	padding: 0;
+}
+@white: #fff;
+@white-active: rgba(255, 255, 255, 0.3);
+@grey: #eee;
+@black: #000;
+@black-active: rgba(0, 0, 0, 0.3);
+@red: #fb565a;
+@red-hover: #e74246;
+@red-active: #d7373b;
+@green: #00ca74;
+@green-hover: #00bc6c;
+@green-active: #00aa62;
+@yellow: #efc849;
+@yellow-hover: #eab534;
+@yellow-active: #e5a722; 
+@font-color: #283136;
+@a-hover: #fb565a;
+@input-border: #d7dcde;
+@input-border-hover: #b4b9bb;
+
+
+body {
+	.zero;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400px;
+	color: @font-color;
+	background-color: @white;
+}
+
+a {
+	text-decoration: none;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -11,4 +49,179 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.main-navigation {
+	line-height: 30px;
+	font-weight: 500;
+	color: @black;
+	background-color: @grey;
+
+
+}
+
+.site-navigation,
+.user-navigation  {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: @black;
+	text-transform: uppercase;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	outline: none;
+	color: @a-hover;
+
+}
+.site-navigation a:active,
+.user-navigation a:active {
+	color: @black-active;
+	
+}
+.tagline-header {
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	color: @black;
+}
+.btn {
+	color: @white;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: none;
+
+	
+}
+
+.btn:active {
+	color: @white-active;
+}
+.btn-red {
+	background-color: @red;
+}
+.btn-red:hover,
+.btn-red:focus, {
+	outline: none;
+	background-color: @red-hover;
+}
+.btn-red:active {
+	background-color: @red-active;
+}
+
+.btn-green {
+	background-color: @green;
+}
+.btn-green:hover,
+.btn-green:focus {
+	outline: none;
+	background-color: @green-hover;
+}
+.btn-green:active {
+	background-color: @green-active;
+}
+.btn-yellow {
+	background-color: @yellow;
+}
+.btn-yellow:hover,
+.btn-yellow:focus {
+	outline: none;
+	background-color: @yellow-hover;
+}
+.btn-yellow:active {
+	background-color: @yellow-active;
+}
+.services-list{
+	list-style: none; 
+}
+
+.services-list h3 {
+	font-size: 24px;
+	font-weight: 30px;
+	color: @black;
+	text-transform: uppercase;
+}
+.features-tagline {
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 45px;
+	color: @black;
+}
+.features-header {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: @black;
+}
+.features-list {
+	list-style: none;
+}
+.features-accuracy {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: @black;
+}
+.features-percentage {
+	font-weight: 700;
+	color: @black;
+	font-size: 45px;
+	
+}
+/*.percentage {
+	font-size: 10px;
+	line-height: 10px;
+}*/
+
+.map-header {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	color: @black;
+}
+.footer-social-tagline {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 36px;
+}
+.footer-social-sale {
+	line-height: 22px;
+}
+.footer-social-list {
+	list-style: none;
+}
+.modal h2 {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+}
+.appointment-item label {
+	font: inherit;
+	font-weight: 700;
+	line-height: 18px;
+
+}
+.appointment-item input,
+.appointment-item textarea {
+	font: inherit;
+	border: 2px solid @input-border;
+}
+.appointment-item input:hover,
+.appointment-item textarea:hover {
+	border: 2px solid @input-border-hover;
+}
+.appointment-item input:focus,
+.appointment-item textarea:focus {
+	outline: none;
+	border: 2px solid @black;
+
+}
+.appointment-item input:invalid,
+.appointment-item textarea:invalid {
+	color: @red-hover;
+	border: 2px solid @red-hover;
 }
