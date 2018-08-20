@@ -9,17 +9,22 @@
 </head>
 <body>
 	<header class="main-header">
+		<div class="container">
 		<nav class="main-navigation">
-			<a href="#" class="main-header-logo"><img src="img/nerds-logo.svg" alt="Логотип студии Nerds" width="160" height="65"></a>
-			<ul class="site-navigation">
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенты</a></li>
-				<li><a href="#">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="user-navigation">
-				<li class="cart"><a href="#">Корзина</a></li>
-			</ul>
+			<div class="main-navigation--wrapper">
+				
+					<a href="#" class="main-header-logo"><img src="img/nerds-logo.svg" alt="Логотип студии Nerds" width="160" height="65"></a>
+						<ul class="site-navigation">
+							<li><a href="#">Студия</a></li>
+							<li><a href="#">Клиенты</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<ul class="user-navigation">
+							<li class="cart"><a href="#">Корзина</a></li>
+						</ul>
+				
+			</div>
 		</nav>
 		<section class="tagline">
 			<h1 class="visually-hidden">Дизайн студия Nerds</h1>
@@ -28,23 +33,23 @@
 			<p class="tagline-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 			<a href="#" class="btn btn-red">Узнать больше</a>
 		</section>
-		
+		</div>
 	</header>
 	<main class="container">	
 		<section class="services">
 			<h2 class="visually-hidden">Услуги</h2>
-				<ul class="services-list">
-					<li class="services-item1">
+				<ul class="services__list">
+					<li class="services__item">
 						<h3>Веб-сайты</h3>
 						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 						<a href="" class="btn btn-red">Заказать</a>
 					</li>
-					<li class="services-item2">
+					<li class="services__item">
 						<h3>Приложения</h3>
 						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 						<a href="" class="btn btn-green">Заказать</a>
 					</li>
-					<li class="services-item3">
+					<li class="services__item">
 						<h3>Презентации</h3>
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 						<a href="" class="btn btn-yellow">Заказать</a>
@@ -52,28 +57,34 @@
 				</ul>
 		</section>
 		<section class="features">
-			<h2 class="visually-hidden">Список преимуществ дизайн студии</h2>
-			<p class="features-tagline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-			<p class="features-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-			<p class="features-header">Выполняем заказы на разработку:</p>
-				<ul class="features-list">
-				<li class="features-list-item1">Веб-сайтов любой сложности</li>
-				<li class="features-list-item2">Мобильных приложений для iOS и Android</li>
-				<li class="features-list-item3">Слайдшоу и видео для корпоративных презентаций</li>
-			</ul>
-			<p class="features-accuracy">с 2004 года Любим точность во всем:</p>
-			<table class="features-table">
-				<tr class="features-percentage">
-					<td>146<span class="percentage">%</span></td>
-					<td>100<sup class="percentage">%</sup></td>
-					<td>50<sup class="percentage">%</sup></td>
-				</tr>
-				<tr>
-					<td>Уровень самоотдачи</td>
-					<td>Соблюдение сроков</td>
-					<td>Минимальная предоплата</td>
-				</tr>
-			</table>
+			<div class="index-columns">
+				<div class="features--wrapper">
+					<h2 class="visually-hidden">Список преимуществ дизайн студии</h2>
+									<p class="features-tagline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+									<p class="features-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+									<p class="features-header">Выполняем заказы на разработку:</p>
+										<ul class="features-list">
+										<li class="features-list-item1">Веб-сайтов любой сложности</li>
+										<li class="features-list-item2">Мобильных приложений для iOS и Android</li>
+										<li class="features-list-item3">Слайдшоу и видео для корпоративных презентаций</li>
+									</ul>
+				</div>
+				<div class="features__table-wrapper">
+					<p class="features-accuracy">с 2004 года Любим точность во всем:</p>
+								<table class="features-table">
+									<tr class="features-percentage">
+										<td>146<span class="percentage">%</span></td>
+										<td>100<sup class="percentage">%</sup></td>
+										<td>50<sup class="percentage">%</sup></td>
+									</tr>
+									<tr class="features__items">
+										<td>Уровень самоотдачи</td>
+										<td>Соблюдение сроков</td>
+										<td>Минимальная предоплата</td>
+									</tr>
+								</table>
+				</div>
+			</div>
 		</section>
 		<section class="friends">
 			<h2 class="visually-hidden">Список бизнес партнеров студии</h2>
@@ -85,6 +96,7 @@
 			</ul>
 			
 		</section>
+	
 		<section class="map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
 			<img src="img/map-layer-min.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" class="map-image" width="1440" height="416">
@@ -93,19 +105,22 @@
 			191186, Санкт-Петербург,<br>
 			ул. Б. Конюшенная, д. 19/8<br>
 			тел. +7 (812) 275-75-75
-			</p>
 			<a class="btn btn-red" href="#">Напишите нам</a>
+			</p>
 		</section>
 	</main>
 	<footer class="main-footer">
-		<div class="footer-social">
-			<b class="footer-social-tagline">Давайте дружить, это выгодно!</b>
-			<p class="footer-social-sale">Скидка 10% для друзей из социальных сетей.</p>
+		<div class="footer-social container">
 			<ul class="footer-social-list">
 				<li><a href="" class="social-btn">Вконтакте</a></li>
 				<li><a href="" class="social-btn">Фейсбук</a></li>
 				<li><a href="" class="social-btn">Инстаграм</a></li>
 			</ul>
+			<div class="footer-content">
+				<b class="footer-social-tagline">Давайте дружить, это выгодно!</b>
+				<p class="footer-social-sale">Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+			
 		</div>
 	</footer>
 	<section class="modal modal-write-us">
