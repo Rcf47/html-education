@@ -30,6 +30,7 @@
 @a-hover: #fb565a;
 @input-border: #d7dcde;
 @input-border-hover: #b4b9bb;
+@social-btn-grey: #e1e1e1;
 
 
 
@@ -39,7 +40,7 @@ body {
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: 400px;
+	font-weight: 400;
 	color: @font-color;
 	background-color: @white;
 }
@@ -77,6 +78,15 @@ input[type="radio"].visually-hidden {
 	width: 160px;
 	height: 65px;
 	margin-right: 200px; /*мое свойство*/
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+	opacity: 0.8;
+}
+
+.main-header-logo:active {
+	opacity: 0.3;
 }
 
 .main-navigation {
@@ -121,7 +131,6 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	max-width: 180px;
 	padding-left: 86px;
-	outline: 2px solid red;
 }
 
 .cart::before {
@@ -156,33 +165,59 @@ input[type="radio"].visually-hidden {
 	color: @black-active;
 	
 }
+
+.tagline {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .tagline-header {
+	width: 380px;
+	margin-right: 50px;
+	margin-bottom: 25px;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
 	color: @black;
 }
+
+.tagline-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.tagline-text {
+	display: block;
+	margin-bottom: 37px;
+	width: 380px;
+}
+.tagline__button {
+	display: block;
+	width: 240px;
+	padding: 16px 54px;
+}
+
 .btn {
 	color: @white;
 	text-align: center;
-	vertical-align: middle;
-	text-transform: uppercase;
-	border: none;
-
 	
+	text-transform: uppercase;
+	border: none;	
 }
 
 .btn:active {
 	color: @white-active;
 }
+
 .btn-red {
 	background-color: @red;
 }
+
 .btn-red:hover,
 .btn-red:focus, {
-	outline: none;
 	background-color: @red-hover;
 }
+
 .btn-red:active {
 	background-color: @red-active;
 }
@@ -190,25 +225,33 @@ input[type="radio"].visually-hidden {
 .btn-green {
 	background-color: @green;
 }
+
 .btn-green:hover,
 .btn-green:focus {
-	outline: none;
 	background-color: @green-hover;
 }
+
 .btn-green:active {
 	background-color: @green-active;
 }
+
 .btn-yellow {
 	background-color: @yellow;
 }
+
 .btn-yellow:hover,
 .btn-yellow:focus {
-	outline: none;
 	background-color: @yellow-hover;
 }
 .btn-yellow:active {
 	background-color: @yellow-active;
 }
+
+.services {
+	.padding__block();
+	.border-bottom();
+}
+
 .services__list{
 	display: flex;
 	justify-content: space-between;
@@ -218,13 +261,42 @@ input[type="radio"].visually-hidden {
 	width: 1100px; /*мое свойство*/
 }
 
-.services {
-	.padding__block();
-	.border-bottom();
-}
-
 .services__item {
 	width: 300px;
+}
+
+.services__item1::before {
+	content: url("../img/illustration-1-min.jpg");
+	display: block;
+	width: 300px;
+	height: 146px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.services__item2::before {
+	content: url("../img/illustration-2-min.jpg");
+	display: block;
+	width: 300px;
+	height: 146px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.services__item3::before {
+	content: url("../img/illustration-3-min.jpg");
+	display: block;
+	width: 300px;
+	height: 146px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.services__button{
+	display: block;
+	width: 150px;
+	padding: 16px 40px;
+	border-radius: 2px;
 }
 
 .services__list h3 {
@@ -253,6 +325,12 @@ input[type="radio"].visually-hidden {
 	width: 360px;
 }
 
+.features__table-wrapper::before {
+	content: url("../img/nerds-illustration-min.png");
+	width: 359px;
+	height: 208px;
+}
+
 .features-tagline {
 	font-size: 45px;
 	font-weight: 500;
@@ -268,6 +346,18 @@ input[type="radio"].visually-hidden {
 	.zero();
 	list-style: none;
 }
+
+.features-list-item::before {
+	content: "";
+	display: inline-block;
+	margin-right: 11px;
+	width: 25px;
+	height: 2px;
+	background-color: @red;
+	vertical-align: middle;
+
+}
+
 .features-accuracy {
 	font-weight: 700;
 	text-transform: uppercase;
@@ -314,6 +404,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	padding-top: 80px;
 	
+	
 	/*Как переопределить ширину элемента за контейнером*/
 }
 
@@ -322,16 +413,26 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: 135px;
 	left: 140px;
-	width: 309px;
+	width: 220px;
 	background-color: @white;
 	padding: 50px;
 }
 
 .map-header {
+	display: block;
+	margin-bottom: 30px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
 	color: @black;
+}
+
+.map__button {
+	display: block;
+	margin-top: 40px;
+	width: 130px;
+	padding: 16px 45px 16px 45px;
+	border-radius: 2px;
 }
 
 .main-footer {
@@ -356,15 +457,39 @@ input[type="radio"].visually-hidden {
 .footer-social-list {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	.zero();
 	width: 260px;
 	list-style: none;
 	margin-right: 140px;
 }
 
+.social-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: @social-btn-grey;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+	background-color: @red-hover;
+}
+
+.social-btn:active {
+	background-color: @red-active;
+}
+.social-btn:active path {
+	fill: @white-active;
+}
+
 .footer-content {
 	width: 560px;
 }
+
 .modal h2 {
 	font-weight: 500;
 	font-size: 45px;

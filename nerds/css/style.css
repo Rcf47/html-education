@@ -4,7 +4,7 @@ body {
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #283136;
   background-color: #ffffff;
 }
@@ -39,6 +39,13 @@ input[type="radio"].visually-hidden {
   height: 65px;
   margin-right: 200px;
   /*мое свойство*/
+}
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.8;
+}
+.main-header-logo:active {
+  opacity: 0.3;
 }
 .main-navigation {
   display: flex;
@@ -75,7 +82,6 @@ input[type="radio"].visually-hidden {
   position: relative;
   max-width: 180px;
   padding-left: 86px;
-  outline: 2px solid red;
 }
 .cart::before {
   content: "";
@@ -104,16 +110,36 @@ input[type="radio"].visually-hidden {
 .user-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+.tagline {
+  display: flex;
+  flex-wrap: wrap;
+}
 .tagline-header {
+  width: 380px;
+  margin-right: 50px;
+  margin-bottom: 25px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
 }
+.tagline-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.tagline-text {
+  display: block;
+  margin-bottom: 37px;
+  width: 380px;
+}
+.tagline__button {
+  display: block;
+  width: 240px;
+  padding: 16px 54px;
+}
 .btn {
   color: #ffffff;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   border: none;
 }
@@ -125,7 +151,6 @@ input[type="radio"].visually-hidden {
 }
 .btn-red:hover,
 .btn-red:focus {
-  outline: none;
   background-color: #e74246;
 }
 .btn-red:active {
@@ -136,7 +161,6 @@ input[type="radio"].visually-hidden {
 }
 .btn-green:hover,
 .btn-green:focus {
-  outline: none;
   background-color: #00bc6c;
 }
 .btn-green:active {
@@ -147,11 +171,15 @@ input[type="radio"].visually-hidden {
 }
 .btn-yellow:hover,
 .btn-yellow:focus {
-  outline: none;
   background-color: #eab534;
 }
 .btn-yellow:active {
   background-color: #e5a722;
+}
+.services {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 .services__list {
   display: flex;
@@ -162,13 +190,38 @@ input[type="radio"].visually-hidden {
   width: 1100px;
   /*мое свойство*/
 }
-.services {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  border-bottom: 2px solid #eeeeee;
-}
 .services__item {
   width: 300px;
+}
+.services__item1::before {
+  content: url("../img/illustration-1-min.jpg");
+  display: block;
+  width: 300px;
+  height: 146px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.services__item2::before {
+  content: url("../img/illustration-2-min.jpg");
+  display: block;
+  width: 300px;
+  height: 146px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.services__item3::before {
+  content: url("../img/illustration-3-min.jpg");
+  display: block;
+  width: 300px;
+  height: 146px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.services__button {
+  display: block;
+  width: 150px;
+  padding: 16px 40px;
+  border-radius: 2px;
 }
 .services__list h3 {
   font-size: 24px;
@@ -191,6 +244,11 @@ input[type="radio"].visually-hidden {
 .features__table-wrapper {
   width: 360px;
 }
+.features__table-wrapper::before {
+  content: url("../img/nerds-illustration-min.png");
+  width: 359px;
+  height: 208px;
+}
 .features-tagline {
   font-size: 45px;
   font-weight: 500;
@@ -206,6 +264,15 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.features-list-item::before {
+  content: "";
+  display: inline-block;
+  margin-right: 11px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  vertical-align: middle;
 }
 .features-accuracy {
   font-weight: 700;
@@ -252,15 +319,24 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 135px;
   left: 140px;
-  width: 309px;
+  width: 220px;
   background-color: #ffffff;
   padding: 50px;
 }
 .map-header {
+  display: block;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+}
+.map__button {
+  display: block;
+  margin-top: 40px;
+  width: 130px;
+  padding: 16px 45px 16px 45px;
+  border-radius: 2px;
 }
 .main-footer {
   padding-top: 69px;
@@ -281,11 +357,31 @@ input[type="radio"].visually-hidden {
 .footer-social-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 260px;
   list-style: none;
   margin-right: 140px;
+}
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+.social-btn:hover,
+.social-btn:focus {
+  background-color: #e74246;
+}
+.social-btn:active {
+  background-color: #d7373b;
+}
+.social-btn:active path {
+  fill: rgba(255, 255, 255, 0.3);
 }
 .footer-content {
   width: 560px;
