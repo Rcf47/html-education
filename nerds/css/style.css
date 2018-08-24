@@ -57,6 +57,7 @@ input[type="radio"].visually-hidden {
 }
 .main-navigation--wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 18px;
@@ -70,6 +71,7 @@ input[type="radio"].visually-hidden {
 .user-navigation {
   margin: 0;
   padding: 0;
+  margin-top: 0px;
   list-style: none;
 }
 .site-navigation {
@@ -134,6 +136,7 @@ input[type="radio"].visually-hidden {
 }
 .tagline__button {
   display: block;
+  box-sizing: border-box;
   width: 240px;
   padding: 16px 54px;
 }
@@ -312,7 +315,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0;
   padding-top: 80px;
-  /*Как переопределить ширину элемента за контейнером*/
 }
 .map-addres {
   display: block;
@@ -339,7 +341,8 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
 }
 .main-footer {
-  padding-top: 69px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .footer-social {
   display: flex;
@@ -386,32 +389,133 @@ input[type="radio"].visually-hidden {
 .footer-content {
   width: 560px;
 }
-.modal h2 {
+.modal {
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.modal__caption {
+  margin: 0;
+  margin-top: 70px;
+  margin-bottom: 48px;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
-.appointment-item label {
+.modal-write-us {
+  bottom: 180px;
+  left: 50%;
+  margin: 0;
+  margin-left: -480px;
+  width: 760px;
+  padding: 0px 100px 85px;
+}
+.modal-close {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: -3px;
+  width: 28px;
+  height: 3px;
+  background-color: #fecccd;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+.modal-close:hover::before,
+.modal-close:hover::after,
+.modal-close:focus::before,
+.modal-close:focus::after {
+  background-color: #fb565a;
+}
+.modal-close:active::before,
+.modal-close:active::after {
+  background-color: #ffeeee;
+}
+.modal__button {
+  display: block;
+  width: 260px;
+  padding: 18px 83px;
+}
+.appointment-form {
+  width: 760px;
+}
+.form--wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.appointment__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 360px;
+  margin: 0;
+}
+.appointment__item1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 760px;
+  margin: 0;
+  margin-bottom: 47px;
+}
+.textarea__label {
+  width: 100%;
+}
+.appointment__input--size {
+  box-sizing: border-box;
+  width: 360px;
+  padding: 19px 16px;
+}
+.appointment__input--name {
+  margin-top: 12px;
+  margin-right: 40px;
+  margin-bottom: 35px;
+}
+.appointment__input--email {
+  margin-top: 12px;
+}
+.appointment__input--textarea {
+  height: 119px;
+  margin-top: 12px;
+}
+.appointment__item label {
   font: inherit;
   font-weight: 700;
   line-height: 18px;
 }
-.appointment-item input,
-.appointment-item textarea {
+.appointment__item input,
+.appointment__item1 textarea {
   font: inherit;
   border: 2px solid #d7dcde;
 }
-.appointment-item input:hover,
-.appointment-item textarea:hover {
+.appointment__item input:hover,
+.appointment__item1 textarea:hover {
   border: 2px solid #b4b9bb;
 }
-.appointment-item input:focus,
-.appointment-item textarea:focus {
+.appointment__item input:focus,
+.appointment__item1 textarea:focus {
   outline: none;
   border: 2px solid #000000;
 }
-.appointment-item input:invalid,
-.appointment-item textarea:invalid {
+.appointment__item input:invalid,
+.appointment__item textarea:invalid {
   color: #e74246;
   border: 2px solid #e74246;
 }
