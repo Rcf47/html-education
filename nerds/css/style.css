@@ -37,8 +37,7 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
   width: 160px;
   height: 65px;
-  margin-right: 200px;
-  /*мое свойство*/
+  margin-right: 10px;
 }
 .main-header-logo:hover,
 .main-header-logo:focus {
@@ -57,10 +56,9 @@ input[type="radio"].visually-hidden {
 }
 .main-navigation--wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .container {
   width: 1160px;
@@ -71,30 +69,23 @@ input[type="radio"].visually-hidden {
 .user-navigation {
   margin: 0;
   padding: 0;
-  margin-top: 0px;
+  margin-top: 21px;
   list-style: none;
 }
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 440px;
+  align-items: center;
+  width: 445px;
 }
-.user-navigation {
-  position: relative;
-  max-width: 180px;
-  padding-left: 86px;
+.site-navigation--item {
+  margin-right: 48px;
 }
-.cart::before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 45px;
-  width: 16px;
-  height: 16px;
-  background-image: url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.site-navigation--item2 {
+  margin-right: 50px;
+}
+.site-navigation--item3 {
+  margin-right: 46px;
 }
 .site-navigation a,
 .user-navigation a {
@@ -112,14 +103,37 @@ input[type="radio"].visually-hidden {
 .user-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+.user-navigation {
+  position: relative;
+  max-width: 180px;
+  margin-top: 27px;
+  padding-left: 85px;
+}
+.cart {
+  display: block;
+  margin-left: 0px;
+  outline: 2px solid red;
+}
+.cart::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 45px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 .tagline {
   display: flex;
   flex-wrap: wrap;
 }
 .tagline-header {
   width: 380px;
-  margin-right: 50px;
+  margin-right: 55px;
   margin-bottom: 25px;
+  margin-top: 62px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -131,14 +145,14 @@ input[type="radio"].visually-hidden {
 }
 .tagline-text {
   display: block;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
   width: 380px;
 }
 .tagline__button {
   display: block;
   box-sizing: border-box;
   width: 240px;
-  padding: 16px 54px;
+  padding: 15px 54px;
 }
 .btn {
   color: #ffffff;
@@ -180,7 +194,7 @@ input[type="radio"].visually-hidden {
   background-color: #e5a722;
 }
 .services {
-  padding-top: 80px;
+  padding-top: 83px;
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
@@ -190,59 +204,87 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 1100px;
+  width: 1105px;
   /*мое свойство*/
 }
 .services__item {
   width: 300px;
 }
 .services__item1::before {
-  content: url("../img/illustration-1-min.jpg");
+  content: "";
   display: block;
+  margin-bottom: 20px;
   width: 300px;
   height: 146px;
+  background-image: url("../img/illustration-1-min.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 .services__item2::before {
-  content: url("../img/illustration-2-min.jpg");
+  content: "";
   display: block;
   width: 300px;
   height: 146px;
+  background-image: url("../img/illustration-2-min.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 .services__item3::before {
-  content: url("../img/illustration-3-min.jpg");
+  content: "";
   display: block;
   width: 300px;
   height: 146px;
+  background-image: url("../img/illustration-3-min.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 .services__button {
   display: block;
-  width: 150px;
-  padding: 16px 40px;
+  box-sizing: border-box;
+  width: 160px;
+  padding: 15px 40px;
   border-radius: 2px;
 }
 .services__list h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 30px;
   color: #000000;
   text-transform: uppercase;
+}
+.services__text {
+  display: block;
+  width: 260px;
+  margin-bottom: 32px;
 }
 .index-columns {
   display: flex;
   justify-content: space-between;
 }
 .features {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 73px;
+  padding-bottom: 76px;
   border-bottom: 2px solid #eeeeee;
 }
 .features--wrapper {
+  padding-top: 0px;
   width: 660px;
+}
+.features-tagline {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #000000;
+}
+.features-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  display: block;
 }
 .features__table-wrapper {
   width: 360px;
@@ -251,12 +293,6 @@ input[type="radio"].visually-hidden {
   content: url("../img/nerds-illustration-min.png");
   width: 359px;
   height: 208px;
-}
-.features-tagline {
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 45px;
-  color: #000000;
 }
 .features-header {
   font-weight: 700;
@@ -267,6 +303,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.features-list-item {
+  display: block;
+  margin-top: 24px;
 }
 .features-list-item::before {
   content: "";
