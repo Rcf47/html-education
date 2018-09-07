@@ -124,6 +124,16 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.store-templates__header {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  padding-top: 60px;
+  padding-bottom: 106px;
+}
 .tagline {
   display: flex;
   flex-wrap: wrap;
@@ -196,6 +206,11 @@ input[type="radio"].visually-hidden {
   padding-top: 83px;
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
+}
+.price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
 }
 .services__list {
   display: flex;
