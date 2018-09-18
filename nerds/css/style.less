@@ -15,6 +15,8 @@
 @white: #ffffff;
 @white-active: rgba(255, 255, 255, 0.3);
 @grey: #eeeeee;
+@grey-sort: #b2b2b2;
+@grey-hover: #666666;
 @black: #000000;
 @black-active: rgba(0, 0, 0, 0.3);
 @red: #fb565a;
@@ -50,8 +52,8 @@ a {
 	text-decoration: none;
 }
 img {
-	max-width: : 100%;
-	height: auto;
+	max-width: 100%;
+
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -164,6 +166,10 @@ input[type="radio"].visually-hidden {
 	
 }
 
+.site__navigation--active {
+	border-bottom: 2px solid @red;
+}
+
 .user-navigation {
 	position: relative;
 	max-width: 180px;
@@ -172,7 +178,7 @@ input[type="radio"].visually-hidden {
 }
 .cart {
 	display: block;
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 .cart::before {
@@ -249,7 +255,7 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-red:hover,
-.btn-red:focus, {
+.btn-red:focus {
 	background-color: @red-hover;
 }
 
@@ -349,7 +355,7 @@ input[type="radio"].visually-hidden {
 	margin-top: 30px;
 	margin-bottom: 20px;
 	font-size: 24px;
-	font-weight: 30px;
+	font-weight: 700;
 	color: @black;
 	text-transform: uppercase;
 }
@@ -372,7 +378,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features--wrapper {
-	padding-top: 0px;
+	padding-top: 0;
 	width: 660px;
 }
 
@@ -436,15 +442,29 @@ input[type="radio"].visually-hidden {
 	color: @black;
 }
 .features-percentage {
+	display: inline-block;
 	font-weight: 700;
 	color: @black;
 	font-size: 45px;
-	
+
 }
-/*.percentage {
-	font-size: 10px;
-	line-height: 10px;
-}*/
+
+.features-percentage__item {
+	display: inline-block;
+	margin-right: 5px;
+	width: 85px;
+}
+
+.features__items-list {
+	display: inline-block;
+	 .zero();
+	margin-top: 10px;
+	width: 104px;
+ }
+
+.percentage {
+	font-size: 31px;
+}
 
 .friends {
 	padding-top: 62px;
@@ -475,6 +495,7 @@ input[type="radio"].visually-hidden {
 	margin: 0 auto;
 	padding: 0;
 	padding-top: 80px;
+
 }
 
 .map-addres {
@@ -766,8 +787,95 @@ input[type="radio"].visually-hidden {
 
 }
 .appointment__item input:invalid,
-.appointment__item textarea:invalid {
+.appointment__item1 textarea:invalid {
 	color: @red-hover;
 	border: 2px solid @red-hover;
 }
 
+.price {
+	.zero();
+	margin-top: 56px;
+}
+
+.price::after {
+	content: '';
+	display: block;
+	width: 260px;
+	height: 80px;
+	margin-top: 55px;
+	margin-bottom: 15px;
+	background-color: @grey;
+	border-radius: 2px;
+}
+
+.price__form {
+	display: flex;
+	width: 260px;
+}
+
+.price__window {
+	.zero();
+	width: 80px;
+	height: 38px;
+	text-align: center;
+	background-color: @grey;
+	border: none;
+	border-radius: 2px;
+}
+
+.price__window--from {
+	margin-right: 21px;
+}
+
+.price-label {
+	margin-right: 11px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.layout {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.price__layout {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.price__features {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.site-templates--sort {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.sort {
+	display: inline-block;
+	.zero();
+	color: @grey-sort;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	cursor: pointer;
+	background-image: none;
+	background-color: transparent;
+	border: none;
+}
+
+.sort:hover {
+	color: @grey-hover;
+}
+
+.sort:active,
+.sort-active {
+	color: @black;
+}

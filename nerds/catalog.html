@@ -12,21 +12,22 @@
 	<div class="container">
 	<nav class="main-navigation">
 		<div class="main-navigation--wrapper">
-				<a href="index.html" class="main-header-logo"><img src="img/nerds-logo.svg" alt="Логотип студии Nerds" width="160" height="65"></a>
-					<ul class="site-navigation">
-						<li class="site-navigation--item"><a href="#">Студия</a></li>
-						<li class="site-navigation--item2"><a href="#">Клиенты</a></li>
-						<li class="site-navigation--item3 site__navigation--active"><a href="#">Магазин</a></li>
-						<li class="site-navigation--item4"><a href="#">Контакты</a></li>
-					</ul>
-					<ul class="user-navigation">
-						<li class="cart"><a href="#">Корзина</a></li>
-					</ul>	
+			<a href="index.html" class="main-header-logo"><img src="img/nerds-logo.svg" alt="Логотип студии Nerds" width="160" height="65"></a>
+				<ul class="site-navigation">
+					<li class="site-navigation--item"><a href="#">Студия</a></li>
+					<li class="site-navigation--item2"><a href="#">Клиенты</a></li>
+					<li class="site-navigation--item3 site__navigation--active"><a href="#">Магазин</a></li>
+					<li class="site-navigation--item4"><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="user-navigation">
+					<li class="cart"><a href="#">Корзина</a></li>
+				</ul>
 		</div>
 	</nav>
 	<section class="store-templates">
 		<h1 class="store-templates__header">Магазин готовых шаблонов</h1>
 	</section>
+    </div>
 </header>
 <main class="container">
 	<section class="price__form">
@@ -34,22 +35,21 @@
 		<form  class="price__userform" action="#" method="post">
 			<p class="price__userform--item1">
 				<legend class="price" for="" >Стоимость: </legend>
-				<label class="price__from">От
-				<input class="price__window price__window--from" id="price--from" type="text" name="price-from">
-				</label>
-				<label class="price__before">До
-				<input class="price__window price__window--before" id="price--before" type="text" name="price-before">
-				</label>
+				<label class="price-label price__from" for="price--from">От</label>
+				<input class="price__window price__window--from" id="price--from" type="text" name="price-from" placeholder="0">
+				<label class=" price-label price__before" for="price--before">До</label>
+				<input class="price__window price__window--before" id="price--before" type="text" name="price-before" placeholder="15000">
 			</p>
 			<p class="price__userform--item2">
-				<label class="layout" for="" >Сетка:
-				<input class="price__layout price__layout--adaptive" type="checkbox" name="price-adaptive">Адаптивная
-				<input class="price__layout price__layout--fixed" type="checkbox" name="price-fixed">Фиксированная
-				<input class="price__layout price__layout--relative" type="checkbox" name="price-fixed">Резиновая
-				</label>
+				<label class="layout" for="price-adaptive" >Сетка:</label>
+				<input class="price__layout price__layout--adaptive" id="price-adaptive" type="checkbox" name="price-adaptive">Адаптивная
+				<input class="price__layout price__layout--fixed" id="price-fixed" type="checkbox" name="price-fixed">Фиксированная
+				<input class="price__layout price__layout--relative" id="price-relative" type="checkbox" name="price-relative">Резиновая
+
 			</p>
 			<p class="price__userform--item3">
-				<select class="features" name="features-list" multiple >
+				<label class="price__features" for="features-list">Особенности:</label>
+				<select class="features" id="features-list" name="features-list" multiple >
 					<option value="Slider" class="features__item1" selected>Слайдер</option>
 					<option value="Features-block" class="features__item2">Блок преимуществ</option>
 					<option value="News" class="features__item3" selected>Новости</option>
@@ -57,21 +57,21 @@
 					<option value="Bin" class="features__item5">Корзина</option>
 				</select>
 			</p>
-			
+			<a class="form__button" href="#">Показать</a>
 		</form>
 	</section>
 	<section class="site-templates">
 		<h2 class="visually-hidden">Образцы сайтов</h2>
 		<p class="site-templates--sort">Сортировать:</p>
-		<button class="sort__byPrice">По цене</button>
-		<button class="sort__byType">По типу</button>
-		<button class="sort__byName">По названию</button>
-		<img src="#" alt="изображение сайта Sedona" class="site-templates__item1">
-		<img src="#" alt="изображение сайта Pink" class="site-templates__item2">
-		<img src="#" alt="изображение сайта барбершоп Бородинский" class="site-templates__item3">
-		<img src="#" alt="изображение сайта Мишки" class="site-templates__item4">
-		<img src="#" alt="изображение сайта для обучения" class="site-templates__item5">
-		<img src="#" alt="изображение сайта магазина по продаже квасного напитка" class="site-templates__item6">
+		<button class="sort sort__byPrice sort-active">По цене</button>
+		<button class="sort sort__byType">По типу</button>
+		<button class="sort sort__byName">По названию</button>
+		<img src="img/min.img/img-sedona-min.jpg" alt="изображение сайта Sedona" class="site-templates__item1">
+		<img src="img/min.img/img-pink-min.jpg" alt="изображение сайта Pink" class="site-templates__item2">
+		<img src="img/min.img/img-barbershop-min.jpg" alt="изображение сайта барбершоп Бородинский" class="site-templates__item3">
+		<img src="img/min.img/img-mishka-min.jpg" alt="изображение сайта Мишки" class="site-templates__item4">
+		<img src="img/min.img/img-aplus-min.jpg" alt="изображение сайта для обучения" class="site-templates__item5">
+		<img src="img/min.img/img-kvast-min.jpg" alt="изображение сайта магазина по продаже квасного напитка" class="site-templates__item6">
 		<a href="#" class="page1 page1--active">1</a>
 		<a href="#" class="page2">2</a>
 		<a href="#" class="page3">3</a>
@@ -87,6 +87,7 @@
 			тел. +7 (812) 275-75-75
 			<a class="map__button btn btn-red" href="#">Напишите нам</a>
 			</p>
+	</section>
 </main>
 <footer class="main-footer">
 		<div class="footer-social container">
@@ -119,11 +120,11 @@
 			<div class="form--wrapper">
 				 <p class="appointment__item">
 					<label class="text__label" for="appointment-name">Ваше имя:</label>
-										<input class="appointment__input--size appointment__input--name" type="text" id="appointment-name" name="name" value="" placeholder="Имя Фамилия">
+						<input class="appointment__input--size appointment__input--name" type="text" id="appointment-name" name="name" value="" placeholder="Имя Фамилия">
 				 </p>
 				 <p class="appointment__item">
 					 <label for="appointment-email">Ваш e-mail:</label>
-										<input class="appointment__input--size appointment__input--email" type="text" id="appointment-email" name="email" value="" placeholder="email@example.com">
+						<input class="appointment__input--size appointment__input--email" type="email" id="appointment-email" name="email" value="" placeholder="email@example.com">
 				</p>
 
 				<p class="appointment__item1">
