@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Дизайн студия Nerds</title>
@@ -29,53 +29,107 @@
 	</section>
     </div>
 </header>
-<main class="container">
+<main class="container container--flex">
 	<section class="price__form">
 		<h2 class="visually-hidden">Форма расчета стоимости</h2>
 		<form  class="price__userform" action="#" method="post">
 			<p class="price__userform--item1">
-				<legend class="price" for="" >Стоимость: </legend>
+				<legend class="price">Стоимость: </legend>
 				<label class="price-label price__from" for="price--from">От</label>
 				<input class="price__window price__window--from" id="price--from" type="text" name="price-from" placeholder="0">
 				<label class=" price-label price__before" for="price--before">До</label>
 				<input class="price__window price__window--before" id="price--before" type="text" name="price-before" placeholder="15000">
 			</p>
 			<p class="price__userform--item2">
-				<label class="layout" for="price-adaptive" >Сетка:</label>
-				<input class="price__layout price__layout--adaptive" id="price-adaptive" type="checkbox" name="price-adaptive">Адаптивная
-				<input class="price__layout price__layout--fixed" id="price-fixed" type="checkbox" name="price-fixed">Фиксированная
-				<input class="price__layout price__layout--relative" id="price-relative" type="checkbox" name="price-relative">Резиновая
+				<legend class="layout">Сетка:</legend>
 
+                <label class="price__image price__layout--adaptive">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path fill="#b8b8b8" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                        <circle fill="#b8b8b8" cx="12.5" cy="12.5" r="4.5"/>
+                    </svg>
+                    <input class="price__layout" id="price-adaptive" type="radio" name="price-button" checked>Адаптивная
+                </label>
+                <label class="price__image price__layout--fixed">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path fill="#b8b8b8" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                    </svg>
+                    <input class="price__layout" id="price-fixed" type="radio" name="price-button">Фиксированная
+                </label>
+                <label class="price__image price__layout--relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path fill="#b8b8b8" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                    </svg>
+                    <input class="price__layout" id="price-relative" type="radio" name="price-button">Резиновая
+                </label>
 			</p>
 			<p class="price__userform--item3">
-				<label class="price__features" for="features-list">Особенности:</label>
-				<select class="features" id="features-list" name="features-list" multiple >
-					<option value="Slider" class="features__item1" selected>Слайдер</option>
-					<option value="Features-block" class="features__item2">Блок преимуществ</option>
-					<option value="News" class="features__item3" selected>Новости</option>
-					<option value="Galery" class="features__item4">Галерея</option>
-					<option value="Bin" class="features__item5">Корзина</option>
-				</select>
+				<legend class="price__features">Особенности:</legend>
+                <label class="features__label">
+					<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+						<path fill="#a6a6a6" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+						<path fill="#a6a6a6" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+					</svg>
+                    <input class="price__features--list price__features--list1" type="checkbox">Слайдер
+                </label>
+                <label class="features__label">
+					<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+						<path fill="#a6a6a6" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+					</svg>
+
+					<input class="price__features--list price__features--list2" type="checkbox">Блок преимуществ
+                </label>
+                <label class="features__label">
+					<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+						<path fill="#a6a6a6" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+						<path fill="#a6a6a6" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+					</svg>
+                    <input class="price__features--list price__features--list3" type="checkbox">Новости
+                </label>
+                <label class="features__label">
+					<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+						<path fill="#a6a6a6" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+					</svg>
+                    <input class="price__features--list price__features--list4" type="checkbox">Галерея
+                </label>
+                <label class="features__label">
+					<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+						<path fill="#a6a6a6" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+					</svg>
+                    <input class="price__features--list price__features--list5" type="checkbox">Корзина
+                </label>
 			</p>
 			<a class="form__button" href="#">Показать</a>
 		</form>
 	</section>
 	<section class="site-templates">
 		<h2 class="visually-hidden">Образцы сайтов</h2>
-		<p class="site-templates--sort">Сортировать:</p>
-		<button class="sort sort__byPrice sort-active">По цене</button>
-		<button class="sort sort__byType">По типу</button>
-		<button class="sort sort__byName">По названию</button>
-		<img src="img/min.img/img-sedona-min.jpg" alt="изображение сайта Sedona" class="site-templates__item1">
-		<img src="img/min.img/img-pink-min.jpg" alt="изображение сайта Pink" class="site-templates__item2">
-		<img src="img/min.img/img-barbershop-min.jpg" alt="изображение сайта барбершоп Бородинский" class="site-templates__item3">
-		<img src="img/min.img/img-mishka-min.jpg" alt="изображение сайта Мишки" class="site-templates__item4">
-		<img src="img/min.img/img-aplus-min.jpg" alt="изображение сайта для обучения" class="site-templates__item5">
-		<img src="img/min.img/img-kvast-min.jpg" alt="изображение сайта магазина по продаже квасного напитка" class="site-templates__item6">
-		<a href="#" class="page1 page1--active">1</a>
-		<a href="#" class="page2">2</a>
-		<a href="#" class="page3">3</a>
-		<button class="next-page">Следующая</button>
+		<div class="site-templates--wrapper">
+			<p class="site-templates--sort">Сортировать:</p>
+			<button class="sort sort__byPrice sort-active">По цене</button>
+			<button class="sort sort__byType">По типу</button>
+			<button class="sort sort__byName">По названию</button>
+			<svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+				<path fill="#231F20" d="M5.5 10L0 0h11"/>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+				<path fill="#a6a6a6" d="M5.5 0L0 10h11z"/>
+			</svg>
+		</div>
+		<div class="image--flex-wrapper">
+			<img src="img/min.img/img-sedona-min.jpg" alt="изображение сайта Sedona" class="site-templates__item1">
+			<img src="img/min.img/img-pink-min.jpg" alt="изображение сайта Pink" class="site-templates__item2">
+			<img src="img/min.img/img-barbershop-min.jpg" alt="изображение сайта барбершоп Бородинский" class="site-templates__item3">
+			<img src="img/min.img/img-mishka-min.jpg" alt="изображение сайта Мишки" class="site-templates__item4">
+			<img src="img/min.img/img-aplus-min.jpg" alt="изображение сайта для обучения" class="site-templates__item5">
+			<img src="img/min.img/img-kvast-min.jpg" alt="изображение сайта магазина по продаже квасного напитка" class="site-templates__item6">
+		</div>
+		<div class="page-list--wrapper">
+			<a class="page page1 page--active" href="#">1</a>
+			<a class="page page2" href="#">2</a>
+			<a class="page page3" href="#">3</a>
+			<a class="next-page" href="#">Следующая</a>
+		</div>
 	</section>
 	<section class="map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
