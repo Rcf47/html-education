@@ -1,0 +1,20 @@
+body {
+  background: -webkit-linear-gradient(45deg, #663d15, #0086B3);
+  background: -o-linear-gradient(45deg, #663d15, #0086B3);
+  background: linear-gradient(45deg, #663d15, #0086B3);
+  font-size: 16px;
+  line-height: 22px;
+}
+.class1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 22px;
+  color: #663d15;
+}
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+  color: red;
+}
